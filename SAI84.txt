@@ -1,0 +1,49 @@
+/* structure in structure  - student data   */
+#include<stdio.h>
+#include<conio.h>
+struct dob
+{
+  int dd;
+  int mm;
+  int yy;
+};
+struct marks
+{
+  int s1;
+  int s2;
+  int s3;
+};
+struct stud
+{
+  int rno;
+  char n[30];
+  struct marks m;
+  struct dob d;
+};
+void main()
+{
+  struct stud s;
+  printf("\n Enter rno : ");
+  scanf("%d",&s.rno);
+
+  flushall();
+  printf("\n Enter Name : ");
+  gets(s.n);
+
+  printf("\n Enter 3 subjects marks  ");
+  scanf("%d%d%d",&s.m.s1,&s.m.s2,&s.m.s3);
+  printf("\n Enter date of birth ");
+  scanf("%d%d%d",&s.d.dd,&s.d.mm,&s.d.yy);
+
+
+  /* output part */
+
+  printf("\n Rno    : %d",s.rno);
+  printf("\n Name   : %s",s.n);
+  printf("\n Maths  : %d",s.m.s1);
+  printf("\n Phy    : %d",s.m.s2);
+  printf("\n chem   : %d",s.m.s3);
+  printf("\n D O B  : %d-%d-%d",s.d.dd,s.d.mm,s.d.yy);
+
+  getch();
+}

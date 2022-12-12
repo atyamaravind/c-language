@@ -1,0 +1,25 @@
+/* Files - write 5 students data into a file */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int rno,s1,s2,s3,i;
+  clrscr();
+  FILE *fp;
+  fp=fopen("data2.txt","w");
+
+  for(i=1;i<=5;i++)
+  {
+
+  printf("\n Enter rno, 3 subjects marks ");
+  scanf("%d%d%d%d",&rno,&s1,&s2,&s3);
+  fprintf(fp,"%d %d %d %d\n",rno,s1,s2,s3);
+  }
+
+  fclose(fp);
+
+  getch();
+
+}
+
+

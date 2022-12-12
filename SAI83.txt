@@ -1,0 +1,41 @@
+/* structures -  book shop info  */
+#include<stdio.h>
+#include<conio.h>
+struct books
+{
+   int bno;
+   char n[20];
+   char a[20];
+   float pr;
+};
+void main()
+{
+  struct books b;
+  clrscr();
+
+  printf("\n Enter Book No : ");
+  scanf("%d",&b.bno);
+
+  flushall();
+
+  printf("\n Enter Book Title : ");
+  gets(b.n);
+
+  flushall();
+  printf("\n Enter Author or Company : ");
+  gets(b.a);
+
+
+  printf("\n Enter Price : " );
+  scanf("%f",&b.pr);
+
+  /* output */
+
+  printf("\n Book No  :   %d",b.bno);
+  printf("\n Title    :   %s",b.n);
+  printf("\n Author   :   %s",b.a);
+  printf("\n Price    :   Rs.%.2f",b.pr);
+getch();
+
+}
+

@@ -1,0 +1,32 @@
+/* structures -  stock info  */
+#include<stdio.h>
+#include<conio.h>
+struct stock
+{
+   int ino;
+   char n[20];
+   int qty;
+   float pr;
+};
+void main()
+{
+  struct stock s;
+  printf("\n Enter Item No : ");
+  scanf("%d",&s.ino);
+  flushall();
+  printf("\n Enter name : ");
+  gets(s.n);
+  printf("\n Enter Quantity : " );
+  scanf("%d",&s.qty);
+  printf("\n Enter Price : ");
+  scanf("%f",&s.pr);
+  /* output */
+  printf("\n Ino     :   %d",s.ino);
+  printf("\n Name    :   %s",s.n);
+  printf("\n Qty     :   %d",s.qty);
+  printf("\n Price   :   Rs.%.2f",s.pr);
+  printf("\n Cost    :   Rs.%.2f",s.qty*s.pr);
+getch();
+
+}
+

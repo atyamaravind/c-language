@@ -1,0 +1,20 @@
+/* functions with arguments and no return values : table */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  void table(int);
+  int n;
+  clrscr();
+  printf("\n Enter table number : ");
+  scanf("%d",&n);
+  table(n);
+  getch();
+}
+
+  void table(int x)
+  {
+    int y;
+    for(y=1;y<=12;y++)
+      printf("\n %d x %d = %d",x,y,x*y);
+ }

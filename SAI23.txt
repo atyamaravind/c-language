@@ -1,0 +1,32 @@
+/* prog. to print Net Cost
+	Cost 		discount
+	<=500		5%
+	<=1000		10%
+	<=1500		15%
+	>1500		18%
+ */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  float c,d,n;
+  printf("\n Enter Cost : ");
+  scanf("%f",&c);
+
+  if(c<=500)
+    d=c*5/100;
+  else
+   if(c<=1000)
+     d=c*10/100;
+   else
+    if(c<=1500)
+      d=c*15/100;
+     else
+      d=c*18/100;
+
+  n=c-d;
+  printf("\n Cost= %.2f  Discount = %.2f  Net Cost = %.2f",c,d,n);
+ getch();
+}
+
+

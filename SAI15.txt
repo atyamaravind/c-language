@@ -1,0 +1,30 @@
+/* prog. to print Net Cost
+	Cost		discount
+	upto 500       10%
+	above 500	15%
+*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  float c,d,n;
+  clrscr();
+  printf("\n Enter Cost  : ");
+  scanf("%f",&c);
+
+  if(c<=500)
+    d=c*10/100;
+  else
+    d=c*15/100;
+
+  n=c-d;
+  printf("\n    Reliance Mall");
+  printf("\n --------------------");
+  printf("\n Cost     = Rs. %.2f",c);
+  printf("\n Discount = Rs. %.2f",d);
+  printf("\n Net Cost = Rs. %.2f",n);
+  printf("\n ---------------------");
+  getch();
+}
+
+

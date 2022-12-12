@@ -1,0 +1,58 @@
+/* prog to print Simple Interest */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ float p,n,r,s;
+
+ clrscr();
+ printf("Enter Principal amount : ");
+ scanf("%f",&p);
+ printf("\n Enter No. of years  : ");
+ scanf("%f",&n);
+ printf("\n Enter Rate of interest  : ");
+ scanf("%f",&r);
+ s=p*n*r/100;
+ printf("\n Simple interest  = %f",s);
+ getch();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

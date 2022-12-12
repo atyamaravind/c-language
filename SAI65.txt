@@ -1,0 +1,32 @@
+/* prog. to store 10 nos. in an array and print biggest, smallest, sum  */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int a[10],i,big,sm,sum;
+  clrscr();
+  /* input part */
+  printf("\nEnter 10 numbers ");
+  for(i=0;i<10;i++)
+   scanf("%d",&a[i]);
+
+  /*calculation part */
+  big=sm=sum=a[0];
+  for(i=1;i<10;i++)
+  {
+    if(a[i]>big)
+      big=a[i];
+
+    if(a[i]<sm)
+      sm=a[i];
+
+    sum=sum+a[i];
+  }
+ /* output part */
+  printf("\nGiven Array : ");
+  for(i=0;i<10;i++)
+   printf("%d  ",a[i]);
+
+  printf("\n Big = %d  Small = %d  Sum = %d",big,sm,sum);
+  getch();
+}

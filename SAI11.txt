@@ -1,0 +1,18 @@
+/*prog to convert Days into years, months, weeks , and days  */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int d,y,m,w;
+  printf("\n Enter days ");
+  scanf("%d",&d);
+
+  y=d/365;
+  d=d%365;
+  m=d/30;
+  d=d%30;
+  w=d/7;
+  d=d%7;
+  printf("\n Years = %d  Months = %d  Weeks = %d  Days = %d",y,m,w,d);
+  getch();
+}

@@ -1,0 +1,23 @@
+/* prog. to print Armstrong or not */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int n,r,arm=0,m;
+  clrscr();
+  printf("\n Enter a number : ");
+  scanf("%d",&n);
+  m=n;
+  while(n!=0)
+  {
+    r=n%10;
+    arm=arm+r*r*r;
+    n=n/10;
+  }
+  if(m==arm)
+    printf("\n Armstrong");
+  else
+    printf("\n Not an armstrong");
+ getch();
+}
+

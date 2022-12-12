@@ -1,0 +1,18 @@
+/* prog. to print a name for 10 times  */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int i=1;
+
+  clrscr();
+
+  do
+  {
+     printf("\n Lotus Computer Education");
+     i++;
+  }while(i<=10);
+
+ getch();
+}
+

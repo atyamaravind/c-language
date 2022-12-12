@@ -1,0 +1,33 @@
+/* prog. to print Result of a student by using nested if */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int t,e,h,tot;
+  float a;
+  clrscr();
+  printf("\n Enter three Subjects marks  : ");
+  scanf("%d%d%d",&t,&e,&h);
+
+  tot=t+e+h;
+  a=tot/3.0;
+
+  if(t>=35 && e>=35 && h>=35)
+  {
+    if(a>=75)
+      printf("\n Distinction ");
+    else
+      if(a>=60)
+	printf("\n First class");
+      else
+	if(a>=50)
+	  printf("\n Second class");
+	else
+	  printf("\n Pass");
+  }
+  else
+    printf("\n Fail");
+  getch();
+}
+
+

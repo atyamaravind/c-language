@@ -1,0 +1,56 @@
+/* prog to print volume of cube */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ float v,s;
+ clrscr();
+
+ printf("Enter Side value  : ");
+ scanf("%f",&s);
+ v=s*s*s;
+
+ printf("\n Volume = %f",v);
+
+ getch();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

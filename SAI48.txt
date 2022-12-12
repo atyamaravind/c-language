@@ -1,0 +1,15 @@
+/* prog. to print multiplication table using for  */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int a,b=1;
+  clrscr();
+  printf("\n Enter Table number : ");
+  scanf("%d",&a);
+
+  for(b=1;b<=12;b++)
+    printf("\n%d x %d = %d",a,b,a*b);
+ getch();
+}
+

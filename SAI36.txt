@@ -1,0 +1,19 @@
+/* prog. to print multiplication table  */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int a,b=1,c;
+  clrscr();
+  printf("\n Enter Table number : ");
+  scanf("%d",&a);
+
+  while(b<=12)
+  {
+    c=a*b;
+    printf("\n%d x %d = %d",a,b,c);
+    b++;
+  }
+ getch();
+}
+

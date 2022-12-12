@@ -1,0 +1,15 @@
+/* prog. to handle characters & strings
+ getchar()		putchar()
+ gets()                 puts()
+*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  char n[80];
+clrscr();
+  printf("\n Enter a line of text  : ");
+  scanf("%[^\n]",&n);
+  printf("%s",n);
+  getch();
+}

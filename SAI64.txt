@@ -1,0 +1,19 @@
+/* prog. to store 10 nos. in an array and print them in reverse order */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int a[10],i;
+  clrscr();
+  /* input part */
+  printf("\nEnter 10 numbers ");
+  for(i=0;i<10;i++)
+   scanf("%d",&a[i]);
+
+ /* output part */
+  printf("\nGiven Array in reverse order : ");
+  for(i=9;i>=0;i--)
+   printf("%d  ",a[i]);
+
+  getch();
+}

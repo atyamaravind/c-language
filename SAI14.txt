@@ -1,0 +1,25 @@
+/* prog. to print electricity bill
+	units		price
+	upto 100        2.80
+	above 100	3.80
+*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int u;
+  float b;
+  printf("\n Enter Units : ");
+  scanf("%d",&u);
+
+  if(u<=100)
+    b=u*2.80;
+  else
+    b=100*2.80+(u-100)*3.80;
+
+  printf("\n Units = %d  Bill = %f",u,b);
+  getch();
+
+}
+
+

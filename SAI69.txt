@@ -1,0 +1,28 @@
+/* prog. to store 3 x 3 matrix values and print diagnol sum  */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int a[3][3],i,j,ds=0;
+  clrscr();
+  /* input part */
+  printf("\nEnter  3 x 3 matrix values  ");
+  for(i=0;i<3;i++)
+   for(j=0;j<3;j++)
+     scanf("%d",&a[i][j]);
+
+ /* output part */
+  printf("\nGiven Matrix  \n");
+  for(i=0;i<3;i++)
+  {
+   for(j=0;j<3;j++)
+      printf("%d  ",a[i][j]);
+   printf("\n");
+  }
+  /* calculation part */
+  for(i=0;i<3;i++)
+    ds=ds+a[i][i];
+  printf("\n Diagnol sum = %d",ds);
+
+  getch();
+}

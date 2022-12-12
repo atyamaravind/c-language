@@ -1,0 +1,18 @@
+/* prog. to print a name for 10 times using goto */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int i=1;
+  clrscr();
+
+loop:
+  printf("Lotus  ");
+  i++;
+
+  if(i<=10)
+    goto loop;
+
+ getch();
+}
+

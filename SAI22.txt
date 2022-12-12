@@ -1,0 +1,32 @@
+/* prog. to print professional tax
+
+	basic		tax
+	<=15000         1%
+	15001 - 25000	2%
+	25001 - 40000	3%
+	above 40000	4%
+ */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  float b,t;
+  printf("\n Enter basic : ");
+  scanf("%f",&b);
+
+  if(b<=15000)
+    t=b*0.01;
+  else
+    if(b<=25000)
+      t=150+(b-15000)*0.02;
+    else
+      if(b<=40000)
+	t=150+200+(b-25000)*0.03;
+      else
+	t=150+200+450+(b-40000)*0.04;
+
+  printf("\n Professional Tax = %f",t);
+  getch();
+}
+
+

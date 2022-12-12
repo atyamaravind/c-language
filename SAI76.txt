@@ -1,0 +1,21 @@
+/* functions with arguments and no return values : factors */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  void factors(int);
+  int n;
+  clrscr();
+  printf("\n Enter a number : ");
+  scanf("%d",&n);
+  factors(n);
+  getch();
+}
+
+  void factors(int x)
+  {
+    int y;
+    for(y=1;y<=x;y++)
+     if(x%y==0)
+       printf("\n Factor = %d",y);
+ }

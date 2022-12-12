@@ -1,0 +1,38 @@
+/* structures -  bank info  */
+#include<stdio.h>
+#include<conio.h>
+struct bank
+{
+   int acno;
+   char n[20];
+   char t[20];
+   float amt;
+};
+void main()
+{
+  struct bank b;
+  clrscr();
+  printf("\n Enter Account No. : ");
+  scanf("%d",&b.acno);
+
+  flushall();
+
+  printf("\n Enter Holder name : ");
+  gets(b.n);
+
+  flushall();
+  printf("\n Enter Type of Account  : " );
+  gets(b.t);
+
+  printf("\n Enter Amount  : ");
+  scanf("%f",&b.amt);
+
+  /* output */
+  printf("\n Acc No      :   %d",b.acno);
+  printf("\n Holder Name :   %s",b.n);
+  printf("\n Acc Type    :   %s",b.t);
+  printf("\n Amount      :   Rs.%.2f",b.amt);
+getch();
+
+}
+

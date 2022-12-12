@@ -1,0 +1,27 @@
+/* Files - read character by character from a file
+
+ c=getchar()	 c=fgetc(cp)
+ putchar(c)      fputc(c,fp)
+
+ */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  char c,fn[11];
+  FILE *fp;
+  clrscr();
+  printf("\n Enter file name ");
+  gets(fn);
+  fp=fopen(fn,"r");
+
+  do
+  {
+    c=fgetc(fp);
+    putchar(c);
+  }while(c!=EOF);
+
+  fclose(fp);
+  getch();
+
+}

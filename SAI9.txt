@@ -1,0 +1,9 @@
+/*prog to print harish*/
+#include<stdio.h>
+#include<conio.h>
+void main();
+{
+ int a,b;
+ clrscr();
+ loop:
+ printf("\n enter table number:");

@@ -1,0 +1,22 @@
+/* prog. to print biggest of two numbers */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int a,b;
+  clrscr();
+  printf("\n Enter two numbers : ");
+  scanf("%d%d",&a,&b);
+  if(a>b)
+  {
+    printf("%d is big",a);
+  }
+  else
+  {
+    printf("%d is big",b);
+  }
+  getch();
+
+}
+
+

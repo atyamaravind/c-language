@@ -1,0 +1,69 @@
+/* prog. to perform Multiplication of two matrices
+   by taking order of matrices  */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int a[10][10],i,j,k,b[10][10],c[10][10],p,q,m,n;
+  clrscr();
+  printf("\n Enter order of first matrix ");
+  scanf("%d%d",&p,&q);
+
+  printf("\n Enter order of Second matrix ");
+  scanf("%d%d",&m,&n);
+
+  if(q!=m)
+  {
+    printf("\n Matrix Multiplication is not possible");
+    goto end;
+  }
+
+  /* input part */
+  printf("\nEnter  First %d x %d matrix values  ",p,q);
+  for(i=0;i<p;i++)
+   for(j=0;j<q;j++)
+     scanf("%d",&a[i][j]);
+
+  printf("\nEnter  Second %d x %d matrix values  ",m,n);
+  for(i=0;i<m;i++)
+   for(j=0;j<n;j++)
+     scanf("%d",&b[i][j]);
+
+ /* calculation part */
+ for(i=0;i<p;i++)
+  for(j=0;j<n;j++)
+  {
+    c[i][j]=0;
+    for(k=0;k<q;k++)
+      c[i][j]=c[i][j]+a[i][k]*b[k][j];
+  }
+
+ /* output part */
+  printf("\nGiven First Matrix  \n");
+  for(i=0;i<p;i++)
+  {
+   for(j=0;j<q;j++)
+      printf("%d  ",a[i][j]);
+   printf("\n");
+  }
+
+  printf("\nGiven Second Matrix  \n");
+  for(i=0;i<m;i++)
+  {
+   for(j=0;j<n;j++)
+      printf("%d  ",b[i][j]);
+   printf("\n");
+  }
+
+  printf("\n Resultant Matrix  \n");
+  for(i=0;i<p;i++)
+  {
+   for(j=0;j<n;j++)
+      printf("%d  ",c[i][j]);
+   printf("\n");
+  }
+
+  end:
+  getch();
+}
+

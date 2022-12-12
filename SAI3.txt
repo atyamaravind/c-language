@@ -1,0 +1,22 @@
+/* arithmetic calculations by accepting values */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int a,b,c;
+  clrscr();
+  printf("Enter first number : ");
+  scanf("%d",&a);
+  printf("\n Enter second number : ");
+  scanf("%d",&b);
+  c=a+b;
+  printf("Addition = %d",c);
+  c=a-b;
+  printf("\n Subtraction = %d",c);
+  c=a*b;
+  printf("\n Multiplication = %d",c);
+  c=a/b;
+  printf("\n Division = %d",c);
+  getch();
+
+}

@@ -1,0 +1,24 @@
+/* functions with arguments and no return values : factorial*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  void fact(int);
+  int n;
+  clrscr();
+  printf("\n Enter a number : ");
+  scanf("%d",&n);
+  fact(n);
+  getch();
+}
+
+  void fact(int x)
+  {
+    int y=1;
+    while(x!=0)
+    {
+      y=y*x;
+      x--;
+    }
+    printf("\n Factorial = %d",y);
+ }

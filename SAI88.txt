@@ -1,0 +1,23 @@
+/* Files - write data into a file */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int rno,s1,s2,s3;
+  clrscr();
+  FILE *fp;
+  fp=fopen("data1.txt","w");
+
+
+  printf("\n Enter rno, 3 subjects marks ");
+  scanf("%d%d%d%d",&rno,&s1,&s2,&s3);
+
+  fprintf(fp,"%d %d %d %d",rno,s1,s2,s3);
+
+  fclose(fp);
+
+  getch();
+
+}
+
+

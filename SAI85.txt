@@ -1,0 +1,38 @@
+/*structure - 3 students data*/
+#include<stdio.h>
+#include<conio.h>
+struct stud
+{
+int rno;
+char n[20];
+int s1;
+int s2;
+int s3;
+};
+void main()
+{
+ struct stud s[5];
+ int i;
+ clrscr();
+ for(i=0;i<5;i++)
+ {
+ printf("\n enter rno,name and 3 subjects marks");
+ scanf("%d",&s[i].rno);
+ flushall();
+
+ scanf("%[^\n]",&s[i].n);
+ scanf("%d%d%d",&s[i].s1,&s[i].s2,&s[i].s3);
+ }
+
+/*output*/
+clrscr();
+ printf("\n    BHASHYAM INTER STUDENTS INFORMATION ");
+ printf("\n ----------------------------------------- ");
+ printf("\n Rno       Name           Mat  Phy Che");
+ printf("\n -----------------------------------------");
+ for(i=0;i<5;i++)
+  printf("\n %d   %s\t\t%5d%5d%5d",s[i].rno,s[i].n,s[i].s1,s[i].s2,s[i].s3);
+ printf("\n -----------------------------------------");
+getch();
+}
+

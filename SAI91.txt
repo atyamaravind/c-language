@@ -1,0 +1,24 @@
+/* Files - read 5 students data from a file */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int rno,s1,s2,s3,i;
+  clrscr();
+  FILE *fp;
+  fp=fopen("data2.txt","r");
+
+  printf("\n Rno     Mat     Phy     Che\n");
+  printf("----------------------------\n");
+  for(i=1;i<=5;i++)
+  {
+  fscanf(fp,"%d%d%d%d",&rno,&s1,&s2,&s3);
+
+  printf("%d\t %d\t %d\t %d\n",rno,s1,s2,s3);
+  }
+  printf("\n---------------------------");
+  fclose(fp);
+
+  getch();
+
+}

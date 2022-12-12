@@ -1,0 +1,23 @@
+/* prog. to print palindrom or not  */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int n,r,rev=0,m;
+  clrscr();
+  printf("\n Enter a number : ");
+  scanf("%d",&n);
+  m=n;
+  while(n!=0)
+  {
+    r=n%10;
+    rev=rev*10+r;
+    n=n/10;
+  }
+  if(m==rev)
+    printf("\n Palindrom");
+  else
+    printf("\n Not a palindrom");
+ getch();
+}
+

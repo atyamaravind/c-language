@@ -1,0 +1,14 @@
+/* prog. to handle characters & strings
+ getchar()		putchar()
+ gets()                 puts()
+*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  char n;
+  printf("\n Enter a character : ");
+  n=getchar(); /*   scanf("%c",&n);*/
+  putchar(n); /*  printf("\n Given character = %c",n); */
+  getch();
+}

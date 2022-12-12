@@ -1,0 +1,57 @@
+/* prog to print volume of cylinder   */
+#include<stdio.h>
+#include<conio.h>
+#define PI 3.143
+void main()
+{
+ float r,h,v;
+ clrscr();
+
+ printf("Enter  Radius, height : ");
+ scanf("%f%f",&r,&h);
+
+ v=PI*r*r*h;
+
+ printf("\n Volume = %f",v);
+ getch();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

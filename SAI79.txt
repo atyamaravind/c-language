@@ -1,0 +1,96 @@
+/* functions program to perform various tasks using functions */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+
+  int ch,n;
+  void fact(int);
+  void factors(int);
+  void table(int);
+  void prime(int);
+  do
+  {
+  clrscr();
+  printf("\n MULTIPLE OPERATIONS ");
+  printf("\n ------------------- ");
+  printf("\n 1. Factorial ");
+  printf("\n 2. Factors ");
+  printf("\n 3. Multiplication Table");
+  printf("\n 4. Prime or not");
+  printf("\n 5. Exit");
+  printf("\n --------------------");
+
+   printf("\nEnter your choice : ");
+   scanf("%d",&ch);
+   if(ch>0 && ch<5)
+   {
+    printf("\n Enter a number : ");
+    scanf("%d",&n);
+   }
+  switch(ch)
+  {
+     case 1:
+	     fact(n);
+	     break;
+     case 2:
+	     factors(n);
+	     break;
+     case 3:
+	     table(n);
+	     break;
+     case 4:
+	     prime(n);
+	     break;
+
+     case 5:
+	      printf("\n Thank you for using this prog.");
+	      break;
+     default:
+	      printf("\n Enter correct choice : ");
+	      break;
+  }
+
+  getch();
+}while(ch!=5);
+}
+/* function part */
+
+void fact(int x)
+{
+	     int y=1;
+	     while(x>0)
+	     {  y=y*x;
+		x--;
+	     }
+	     printf("\n Factorial = %d",y);
+}
+
+void factors(int x)
+{
+	     int y;
+	     for(y=1;y<=x;y++)
+	      if(x%y==0)
+		printf("\n Factor = %d",y);
+
+}
+
+void table(int x)
+{
+	     int y;
+	     for(y=1;y<=12;y++)
+	      printf("\n %d x %d = %d",x,y,x*y);
+}
+
+void prime(int x)
+{
+	int c,y;
+	     c=0;
+	     for(y=1;y<=x;y++)
+	       if(x%y==0)
+		 c++;
+	     if(c==2)
+	       printf("\n Prime");
+	     else
+	       printf("\nNot prime");
+}

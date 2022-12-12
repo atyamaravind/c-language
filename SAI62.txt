@@ -1,0 +1,28 @@
+/* prog. to print vowels, consonents and words */
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+  char n[80];
+  int k,i,v=0,c=0,w=1;
+ clrscr();
+  printf("\n Enter a line of text  : ");
+  gets(n);
+
+  k=strlen(n);
+
+  for(i=0;i<k;i++)
+  {
+   putchar(n[i]);
+   if(n[i]=='a' || n[i]=='e' || n[i]=='i' || n[i]=='o'||n[i]=='u')
+      v++;
+   else
+      if(n[i]==' ')
+	w++;
+      else
+	c++;
+  }
+  printf("\n Vowels = %d  Consonents = %d  Word= %d",v,c,w);
+  getch();
+}

@@ -1,0 +1,34 @@
+/* structures  - student data   */
+#include<stdio.h>
+#include<conio.h>
+struct stud
+{
+  int rno;
+  char n[30];
+  int s1;
+  int s2;
+  int s3;
+};
+void main()
+{
+  struct stud s;
+  printf("\n Enter rno : ");
+  scanf("%d",&s.rno);
+
+  flushall();
+  printf("\n Enter Name : ");
+  gets(s.n);
+
+  printf("\n Enter 3 subjects marks  ");
+  scanf("%d%d%d",&s.s1,&s.s2,&s.s3);
+
+  /* output part */
+
+  printf("\n Rno    : %d",s.rno);
+  printf("\n Name   : %s",s.n);
+  printf("\n Maths  : %d",s.s1);
+  printf("\n Phy    : %d",s.s2);
+  printf("\n chem   : %d",s.s3);
+
+  getch();
+}

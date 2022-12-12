@@ -1,0 +1,18 @@
+/* prog. to print Digital sum  */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int n,r,ds=0;
+  clrscr();
+  printf("\n Enter a number : ");
+  scanf("%d",&n);
+  while(n!=0)
+  {
+    r=n%10;
+    ds=ds+r;
+    n=n/10;
+  }
+  printf("\n Digital sum = %d",ds);
+ getch();
+}

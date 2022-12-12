@@ -1,0 +1,54 @@
+/* prog. to perform Multiplication of two matrices  */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int a[3][3],i,j,k,b[3][3],c[3][3];
+  clrscr();
+  /* input part */
+  printf("\nEnter  First 3 x 3 matrix values  ");
+  for(i=0;i<3;i++)
+   for(j=0;j<3;j++)
+     scanf("%d",&a[i][j]);
+
+  printf("\nEnter  Second 3 x 3 matrix values  ");
+  for(i=0;i<3;i++)
+   for(j=0;j<3;j++)
+     scanf("%d",&b[i][j]);
+
+ /* calculation part */
+ for(i=0;i<3;i++)
+  for(j=0;j<3;j++)
+  {
+    c[i][j]=0;
+    for(k=0;k<3;k++)
+      c[i][j]=c[i][j]+a[i][k]*b[k][j];
+  }
+
+ /* output part */
+  printf("\nGiven First Matrix  \n");
+  for(i=0;i<3;i++)
+  {
+   for(j=0;j<3;j++)
+      printf("%d  ",a[i][j]);
+   printf("\n");
+  }
+
+  printf("\nGiven Second Matrix  \n");
+  for(i=0;i<3;i++)
+  {
+   for(j=0;j<3;j++)
+      printf("%d  ",b[i][j]);
+   printf("\n");
+  }
+
+  printf("\n Resultant Matrix  \n");
+  for(i=0;i<3;i++)
+  {
+   for(j=0;j<3;j++)
+      printf("%d  ",c[i][j]);
+   printf("\n");
+  }
+  getch();
+}
+

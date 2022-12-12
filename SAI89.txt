@@ -1,0 +1,21 @@
+/* Files - read data from a file */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int rno,s1,s2,s3;
+  clrscr();
+  FILE *fp;
+  fp=fopen("data1.txt","r");
+
+  fscanf(fp,"%d%d%d%d",&rno,&s1,&s2,&s3);
+
+  printf("Rno : %d   Mat : %d   Phy : %d  Che: %d",rno,s1,s2,s3);
+
+  fclose(fp);
+
+  getch();
+
+}
+
+

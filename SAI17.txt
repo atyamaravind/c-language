@@ -1,0 +1,23 @@
+/* prog. to print biggest of three numbers using if else ladder */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int a,b,c;
+  clrscr();
+  printf("\n Enter three numbers : ");
+  scanf("%d%d%d",&a,&b,&c);
+
+  if(a>b && a>c)
+    printf("%d is big",a);
+  else
+   if(b>c)
+     printf("%d is big",b);
+   else
+     printf("%d is big",c);
+
+  getch();
+
+}
+
+

@@ -1,0 +1,21 @@
+/* prog. to print natural numbers upto n */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int i=1,n;
+  clrscr();
+
+  printf("\n Enter the limit ");
+  scanf("%d",&n);
+
+  loop:
+  printf("%d\t",i);
+  i++;
+  if(i<=n)
+    goto loop;
+
+
+ getch();
+}
+

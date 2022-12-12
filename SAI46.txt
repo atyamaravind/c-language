@@ -1,0 +1,12 @@
+/* prog. to print a name for 10 times using for loop  */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int i;
+  clrscr();
+  for(i=1;i<=10;i++)
+     printf("\n Lotus Computer Education");
+  getch();
+}
+

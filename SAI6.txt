@@ -1,0 +1,58 @@
+/* prog to convert Fahrenheit value into Celsius value */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ float f,c;
+
+ clrscr();
+ printf("Enter Fahrenheit value : ");
+ scanf("%f",&f);
+
+ c=5/9.0*(f-32);
+
+ printf("\n Celsius value = %f",c);
+
+ getch();
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

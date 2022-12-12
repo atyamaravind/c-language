@@ -1,0 +1,37 @@
+/* prog. to print Roots of quadratic equation   */
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+  int a,b,c,d;
+  float r1,r2;
+  clrscr();
+  printf("\n Enter 3 numbers   : ");
+  scanf("%d%d%d",&a,&b,&c);
+
+
+  d=b*b-4*a*c;
+
+  if(d>0)
+  {
+    printf("\n Roots are Real and Distinct");
+    r1=(-b+sqrt(d))/2*a;
+    r2=(-b-sqrt(d))/2*a;
+    printf("\n Root 1 : %.2f   Root 2: %.2f",r1,r2);
+  }
+  else
+   if(d==0)
+   {
+     printf("\n Roots are Real and Equal");
+     r1=r2=-b/(2*a);
+     printf("\n Root 1 : %.2f   Root 2: %.2f",r1,r2);
+
+   }
+   else
+    printf("\n Roots are Imaginary");
+
+ getch();
+}
+
+

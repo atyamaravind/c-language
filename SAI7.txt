@@ -1,0 +1,55 @@
+/* prog to print area, circumference of rectangle */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ float a,c,l,b;
+ clrscr();
+ printf("Enter Length, Breadth  : ");
+ scanf("%f%f",&l,&b);
+ a=l*b;
+ c=2*(l+b);
+
+ printf("\n Area = %f \nCircumference = %f",a,c);
+ getch();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+/* prog. to store 10 nos. in an array and print them in
+   ASCENDING ORDER using SELECTION SORT */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int a[10],i,j,temp;
+  clrscr();
+  /* input part */
+  printf("\nEnter 10 numbers ");
+  for(i=0;i<10;i++)
+   scanf("%d",&a[i]);
+
+ /* calculation part */
+   for(i=0;i<9;i++)
+    for(j=i+1;j<10;j++)
+      if(a[i]>a[j])
+       {
+	 temp=a[i];
+	 a[i]=a[j];
+	 a[j]=temp;
+	}
+ /* output part */
+  printf("\nGiven Array : ");
+  for(i=0;i<10;i++)
+   printf("%d  ",a[i]);
+
+  getch();
+}

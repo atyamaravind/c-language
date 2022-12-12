@@ -1,0 +1,19 @@
+/* prog. to print factors of a number */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int n,i=1,r;
+  clrscr();
+  printf("\n Enter a number : ");
+  scanf("%d",&n);
+  while(i<=n)
+  {
+    r=n%i;
+    if(r==0)
+      printf("\n Factor = %d",i);
+    i++;
+  }
+ getch();
+}
+

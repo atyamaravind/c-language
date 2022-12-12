@@ -1,0 +1,20 @@
+/* arithmetic calculations  */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int a,b,c;
+  clrscr();
+  a=20;
+  b=6;
+  c=a+b;
+  printf("Addition = %d",c);
+  c=a-b;
+  printf("\n Subtraction = %d",c);
+  c=a*b;
+  printf("\n Multiplication = %d",c);
+  c=a/b;
+  printf("\n Division = %d",c);
+  getch();
+
+}

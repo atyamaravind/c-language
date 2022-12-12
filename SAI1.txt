@@ -1,0 +1,76 @@
+/* welcome screen program */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  clrscr();
+  printf("Welcome to C language world ");
+  printf("\nC was developed by Dennis Ritchie");
+  printf("\nC is a high level programming language");
+  getch();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

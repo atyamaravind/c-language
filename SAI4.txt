@@ -1,0 +1,70 @@
+/* prog to print total, average by accepting 6 subjects maks */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int t,e,h,m,sc,s,tot;
+ float a;
+ clrscr();
+ printf("Enter telugu marks : ");
+ scanf("%d",&t);
+ printf("\n Enter English marks : ");
+ scanf("%d",&e);
+ printf("\n Enter Hindi marks : ");
+ scanf("%d",&h);
+ printf("Enter Maths marks : ");
+ scanf("%d",&m);
+ printf("\n Enter Science marks : ");
+ scanf("%d",&sc);
+ printf("\n Enter Social marks : ");
+ scanf("%d",&s);
+
+ tot=t+e+h+m+sc+s;
+ a=tot/6.0;
+
+ printf("\n Total = %d",tot);
+ printf("\n Average = %f",a);
+
+ getch();
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

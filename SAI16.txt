@@ -1,0 +1,18 @@
+/* prog. to print eligibility of voting right */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int a;
+  clrscr();
+  printf("\n Enter your age   : ");
+  scanf("%d",&a);
+
+  if(a>=18)
+    printf("\n You are eligible to cast your vote ");
+  else
+    printf("\n You have to wait %d years to cast your vote ",18-a);
+  getch();
+}
+
+
